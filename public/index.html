@@ -13,29 +13,42 @@
     <header>
         <h1>Buscador de Cócteles (TheCocktailDB)</h1>
         <p>Selecciona una letra, elige un cóctel y explora sus ingredientes.</p>
-        </header>
-        <!-- Selector de letras -->
-        <section id="letter-selector">
-            <!-- Aqui se generan los botones A-Z con JS -->
+    </header>
+    <!-- Selector de letras -->
+    <section id="letter-selector">
+        <!-- Aqui se generan los botones A-Z con JS -->
+    </section>
+
+    <main>
+
+        <!-- Lista de cócteles por letra -->
+        <section id="cocktail-list-section">
+            <h2>Cócteles encontrados</h2>
+            <div id="cocktail-list" class="grid"></div>
+            <p id="no-results" class="hidden">No se han encontrado cócteles para esta letra.</p>
+            <!--Cambiar con eventlistener-->
         </section>
-        
-        <main>
-        
-            <!-- Lista de cócteles por letra -->
-            <section id="cocktail-list-section">
-                <h2>Cócteles encontrados</h2>
-                <div id="cocktail-list" class="grid"></div>
-                <p id="no-results" class="hidden">No se han encontrado cócteles para esta letra.</p> <!--Cambiar con eventlistener-->
-                </section>
-                
-                <!-- Detalle de un cóctel -->
-                <section id="cocktail-detail-section">
-                    <h2>Detalle del cóctel</h2>
-                    <div id="cocktail-detail" class="card empty">
-                        <p>Selecciona un cóctel de la lista.</p>
-                    </div>
-                </section>
-        </main>
-        </body>
+
+        <!-- Detalle de un cóctel -->
+        <section id="cocktail-detail-section">
+            <h2>Detalle del cóctel</h2>
+            <div id="cocktail-detail" class="card empty">
+                <p>Selecciona un cóctel de la lista.</p>
+            </div>
+        </section>
+
+        <!-- Otros cócteles por ingrediente -->
+        <section id="ingredient-cocktails-section">
+            <h2>Cócteles con este ingrediente</h2>
+            <div id="ingredient-cocktail-list" class="grid"></div>
+            <p id="ingredient-empty" class="hidden">
+                Haz clic en la foto de un ingrediente para ver más cócteles.
+            </p>
+        </section>
+    </main>
+     <footer>
+    <small>Cocktails by Vicky y Yana &copy; Datos de <a href="https://www.thecocktaildb.com" target="_blank">TheCocktailDB</a></small>
+  </footer>
+</body>
 
 </html>
