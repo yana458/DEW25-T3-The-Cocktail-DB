@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Cócteles</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Buscador de Cócteles (TheCocktailDB)</h1>
+        <p>Selecciona una letra, elige un cóctel y explora sus ingredientes.</p>
+        </header>
+        <!-- Selector de letras -->
+        <section id="letter-selector">
+            <!-- Aqui se generan los botones A-Z con JS -->
+        </section>
+        
+        <main>
+        
+            <!-- Lista de cócteles por letra -->
+            <section id="cocktail-list-section">
+                <h2>Cócteles encontrados</h2>
+                <div id="cocktail-list" class="grid"></div>
+                <p id="no-results" class="hidden">No se han encontrado cócteles para esta letra.</p> <!--Cambiar con eventlistener-->
+                </section>
+                
+                <!-- Detalle de un cóctel -->
+                <section id="cocktail-detail-section">
+                    <h2>Detalle del cóctel</h2>
+                    <div id="cocktail-detail" class="card empty">
+                        <p>Selecciona un cóctel de la lista.</p>
+                    </div>
+                </section>
+        </main>
+        </body>
+
+</html>
