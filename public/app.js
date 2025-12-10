@@ -158,9 +158,9 @@ function renderCocktailDetail(drink) {
   info.classList.add("detail-info");
   info.innerHTML = `
     <h3>${drink.strDrink}</h3>
-    <p><strong>Tipo:</strong> ${drink.strAlcoholic || "N/A"}</p>
-    <p><strong>Categoría:</strong> ${drink.strCategory || "N/A"}</p>
-    <p><strong>Vaso:</strong> ${drink.strGlass || "N/A"}</p>
+    <p><strong>Tipo:</strong> ${drink.strAlcoholic || "Sin definir"}</p>
+    <p><strong>Categoría:</strong> ${drink.strCategory || "Sin categoría"}</p>
+    <p><strong>Vaso:</strong> ${drink.strGlass || "Sin definir"}</p>
     <p><strong>Instrucciones:</strong> ${drink.strInstructionsES || "No dispone de instrucciones en español"}</p>
   `;
 
