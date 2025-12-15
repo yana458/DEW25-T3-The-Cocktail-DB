@@ -118,7 +118,7 @@ async function fetchCocktailDetail(idDrink) {
 
     const drink = data.drinks[0];
     renderCocktailDetail(drink);
-    
+
     // Guardar en localStorage el último cóctel (envuelto en try para evitar que rompa)
     try {
       localStorage.setItem("lastCocktailId", idDrink);

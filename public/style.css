@@ -341,3 +341,9 @@ footer a {
     font-size: 1.6rem;
   }
 }
+
+#cocktail-detail-section {
+  position: sticky;
+  top: 100px;      
+  align-self: flex-start;
+}
